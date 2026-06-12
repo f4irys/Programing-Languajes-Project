@@ -1,56 +1,70 @@
-// Compiled JavaScript version of src/typescript/task-planner.ts
-class AcademicTask {
-  constructor(title, priority, dueDate) {
-    this.title = title;
-    this.priority = priority;
-    this.dueDate = dueDate;
-  }
-}
+# Multi-Paradigm Programming Project
 
-class AcademicTaskPlanner {
-  constructor() {
-    this.tasks = [];
-  }
+An interactive web project developed by Deborah Perez to explore different programming paradigms through browser-based applications.
 
-  addTask(task) {
-    this.tasks.push(task);
-    this.sortTasks();
-  }
+## Programming Paradigms
 
-  sortTasks() {
-    const order = { High: 1, Medium: 2, Low: 3 };
-    this.tasks.sort((a, b) => order[a.priority] - order[b.priority]);
-  }
+### Imperative
+- UPRM GPA Calculator
+- Language: Python with PyScript
 
-  render(containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-    if (this.tasks.length === 0) {
-      container.innerHTML = "<p>No academic tasks added yet.</p>";
-      return;
-    }
-    container.innerHTML = this.tasks.map(task => `
-      <div class="task-item">
-        <div><strong>${task.title}</strong><br><small>Due: ${task.dueDate || "No date"}</small></div>
-        <span class="pill ${task.priority}">${task.priority}</span>
-      </div>
-    `).join("");
-  }
-}
+### Functional
+- Study Session Timer
+- Language: Elm
 
-const planner = new AcademicTaskPlanner();
+### Logical
+- Career Path Advisor
+- Language: Prolog with Tau Prolog
 
-function addAcademicTask() {
-  const title = document.getElementById('taskTitle').value.trim();
-  const priority = document.getElementById('taskPriority').value;
-  const dueDate = document.getElementById('taskDue').value;
-  if (!title) {
-    alert('Please enter a task title.');
-    return;
-  }
-  planner.addTask(new AcademicTask(title, priority, dueDate));
-  planner.render('taskPlannerOutput');
-  document.getElementById('taskTitle').value = '';
-}
+### Object-Oriented
+- Mini Smart Academic Task Planner
+- Language: TypeScript
 
-document.addEventListener('DOMContentLoaded', () => planner.render('taskPlannerOutput'));
+### Additional Programs
+- Flashcard Generator — JavaScript
+- Internship Application Tracker — JavaScript
+
+### Curriculum Vitae
+- Dynamic résumé generated from JSON
+- Entries can be included or excluded
+- HTML résumé rendering
+- PDF download using jsPDF
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- Python / PyScript
+- Elm
+- Prolog / Tau Prolog
+- TypeScript
+- JSON
+- Git and GitHub
+
+## Running the Project
+
+1. Open the project folder in Visual Studio Code.
+2. Open `index.html`.
+3. Right-click and select **Open with Live Server**.
+4. Keep an internet connection available because some libraries are loaded through external CDNs.
+
+## Project Structure
+
+```text
+multi_paradigm_programming_project/
+├── index.html
+├── README.md
+├── cv
+├── elm.json
+├── assets/
+│   ├── css/
+│   └── js/
+├── data/
+├── src/
+│   ├── elm/
+│   ├── python/
+│   └── typescript/
+└── dist/
+    ├── elm/
+    └── typescript/
