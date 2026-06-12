@@ -76,15 +76,22 @@ Each program is available from the main webpage.
 ## Project Structure
 
 ```text
-multi-paradigm-programming-project/
+multi_paradigm_programming_project/
 ├── index.html
 ├── README.md
 ├── cv
 ├── elm.json
 ├── assets/
+│   ├── css/
+│   └── js/
 ├── data/
 ├── src/
+│   ├── elm/
+│   ├── python/
+│   └── typescript/
 └── dist/
+    ├── elm/
+    └── typescript/
 ```
 
 The `src` folder contains the original source files, while the `dist` folder contains the compiled files used by the browser.
