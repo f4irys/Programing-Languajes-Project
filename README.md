@@ -68,7 +68,7 @@ multi_paradigm_programming_project/
 └── dist/
     ├── elm/
     └── typescript/
-
+```
 ## Author
 
 Deborah M. Perez González
