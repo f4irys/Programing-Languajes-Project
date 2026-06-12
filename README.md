@@ -1,74 +1,101 @@
 # Multi-Paradigm Programming Project
 
-An interactive web project developed by Deborah Perez to explore different programming paradigms through browser-based applications.
+This project is an interactive webpage created to explore different programming languages and programming paradigms. It includes seven browser-based programs developed using Python, Elm, Prolog, TypeScript, JavaScript, and JSON.
 
-## Programming Paradigms
+The programs demonstrate imperative, functional, logical, and object-oriented programming. The project also includes a dynamic résumé that can be customized and downloaded as a PDF.
 
-### Imperative
-- UPRM GPA Calculator
-- Language: Python with PyScript
+## Programs Included
 
-### Functional
-- Study Session Timer
-- Language: Elm
+* UPRM GPA Calculator — Python / PyScript
+* Study Session Timer — Elm
+* Career Path Advisor — Prolog / Tau Prolog
+* Mini Smart Academic Task Planner — TypeScript
+* Flashcard Generator — JavaScript
+* Internship Application Tracker — JavaScript
+* Dynamic Résumé Generator — JavaScript and JSON
 
-### Logical
-- Career Path Advisor
-- Language: Prolog with Tau Prolog
+## How to Run the Project
 
-### Object-Oriented
-- Mini Smart Academic Task Planner
-- Language: TypeScript
+### Option 1: Clone the repository
 
-### Additional Programs
-- Flashcard Generator — JavaScript
-- Internship Application Tracker — JavaScript
+1. Open a terminal.
+2. Clone the repository:
 
-### Curriculum Vitae
-- Dynamic résumé generated from JSON
-- Entries can be included or excluded
-- HTML résumé rendering
-- PDF download using jsPDF
+```bash
+git clone https://github.com/YOUR-USERNAME/multi-paradigm-programming-project.git
+```
 
-## Technologies
+3. Open the project folder:
 
-- HTML
-- CSS
-- JavaScript
-- Python / PyScript
-- Elm
-- Prolog / Tau Prolog
-- TypeScript
-- JSON
-- Git and GitHub
+```bash
+cd multi-paradigm-programming-project
+```
 
-## Running the Project
+4. Open the folder in Visual Studio Code:
 
-1. Open the project folder in Visual Studio Code.
-2. Open `index.html`.
-3. Right-click and select **Open with Live Server**.
-4. Keep an internet connection available because some libraries are loaded through external CDNs.
+```bash
+code .
+```
+
+Replace `YOUR-USERNAME` with the correct GitHub username.
+
+### Option 2: Download the ZIP file
+
+1. Open the GitHub repository.
+2. Select **Code**.
+3. Select **Download ZIP**.
+4. Extract the downloaded file.
+5. Open the extracted folder in Visual Studio Code.
+
+## Running the Webpage
+
+The recommended method is to use the Live Server extension in Visual Studio Code.
+
+1. Install **Live Server** from the Extensions section in Visual Studio Code.
+2. Open the project folder.
+3. Open `index.html`.
+4. Right-click inside the file.
+5. Select **Open with Live Server**.
+
+The webpage should open automatically in the browser.
+
+An internet connection is required because some external libraries are used for PyScript, Tau Prolog, and PDF generation.
+
+## Using the Programs
+
+Each program is available from the main webpage.
+
+* The GPA Calculator allows the user to enter letter grades and course credits.
+* The Study Session Timer includes study and break modes.
+* The Career Path Advisor recommends possible careers based on selected interests.
+* The Academic Task Planner organizes tasks by priority.
+* The Flashcard Generator creates study cards.
+* The Internship Tracker stores application information in the browser.
+* The Résumé Generator allows entries to be selected or removed before downloading the résumé as a PDF.
 
 ## Project Structure
 
 ```text
-multi_paradigm_programming_project/
+multi-paradigm-programming-project/
 ├── index.html
 ├── README.md
 ├── cv
 ├── elm.json
 ├── assets/
-│   ├── css/
-│   └── js/
 ├── data/
 ├── src/
-│   ├── elm/
-│   ├── python/
-│   └── typescript/
 └── dist/
-    ├── elm/
-    └── typescript/
 ```
+
+The `src` folder contains the original source files, while the `dist` folder contains the compiled files used by the browser.
+
+## Important Notes
+
+* Run the project through Live Server or another local web server.
+* Do not open the ZIP file directly.
+* Keep the file named `cv` in the root folder.
+* Keep an internet connection active while testing the programs.
+
 ## Author
 
 Deborah M. Perez González
